@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Community Event Portal - HTML5 Exercises Guide
 
 ## Project Overview
@@ -297,3 +298,6 @@ After completing these exercises:
 For questions or issues with this project, refer to the Help page included in the portal (help.html).
 
 Happy Learning!
+=======
+# practice-html
+>>>>>>> 85737479633fc2d20b2576d8d218a62779be3a8a
