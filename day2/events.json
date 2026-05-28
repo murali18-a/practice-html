@@ -1,0 +1,5 @@
+[
+  { "id": 101, "name": "Community Music Night", "date": "2026-06-05", "category": "Music", "location": "Park Square" },
+  { "id": 102, "name": "Volunteer Cleanup", "date": "2026-06-12", "category": "Community", "location": "River Walk" },
+  { "id": 103, "name": "Family Art Fair", "date": "2026-06-18", "category": "Art", "location": "Main Street" }
+]
