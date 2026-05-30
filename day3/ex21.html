@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11.1: Profile Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-5">Profile Cards</h1>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=John+Doe" class="card-img-top" alt="John Doe">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text text-muted">Full Stack Developer</p>
+                        <p class="card-text">Experienced developer with expertise in modern web technologies.</p>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary btn-sm">Follow</button>
+                            <button class="btn btn-outline-secondary btn-sm">Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="https://via.placeholder.com/300x200?text=Jane+Smith" class="card-img-top" alt="Jane Smith">
+                        <span class="badge bg-success position-absolute bottom-0 end-0 m-2">Online</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text text-muted">UI/UX Designer</p>
+                        <p class="card-text">Creative designer passionate about user experience.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">Figma</span>
+                            <span class="badge bg-primary">Adobe XD</span>
+                            <span class="badge bg-primary">Sketch</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary btn-sm">Follow</button>
+                            <button class="btn btn-outline-secondary btn-sm">Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Bob+Johnson" class="card-img-top" alt="Bob Johnson">
+                    <div class="card-body">
+                        <h5 class="card-title">Bob Johnson</h5>
+                        <p class="card-text text-muted">Project Manager</p>
+                        <p class="card-text">Experienced in agile project management and team coordination.</p>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary btn-sm">Follow</button>
+                            <button class="btn btn-outline-secondary btn-sm">Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5">Extended Profile Card</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/600x300?text=Profile" class="card-img-top" alt="Profile">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah Williams</h5>
+                        <p class="card-text text-muted">Senior Product Manager</p>
+                        <p class="card-text">
+                            With over 8 years of experience in product management, Sarah has successfully launched 15+ products.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Location:</strong> San Francisco, CA</li>
+                        <li class="list-group-item"><strong>Experience:</strong> 8+ years</li>
+                        <li class="list-group-item"><strong>Skills:</strong> Product Strategy, Analytics</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">GitHub</a>
+                        <a href="#" class="card-link">LinkedIn</a>
+                        <a href="#" class="card-link">Portfolio</a>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary w-100">Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card text-center mb-4">
+                    <img src="https://via.placeholder.com/150x150?text=Avatar" class="card-img-top rounded-circle mt-3 mx-auto" style="width: 150px; height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Brown</h5>
+                        <p class="card-text text-muted">Backend Engineer</p>
+                        <p class="card-text small">
+                            Specializing in cloud infrastructure and microservices architecture.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-warning">Node.js</span>
+                            <span class="badge bg-warning">Python</span>
+                            <span class="badge bg-warning">AWS</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <button class="btn btn-primary btn-sm">Follow</button>
+                        <button class="btn btn-secondary btn-sm">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-4">
+            <strong>Card Components Used:</strong>
+            <ul class="mb-0">
+                <li><code>card-img-top</code> - Image at the top of the card</li>
+                <li><code>card-body</code> - Main content area</li>
+                <li><code>card-title</code> - Title of the card</li>
+                <li><code>card-text</code> - Text content</li>
+                <li><code>card-footer</code> - Bottom section for actions</li>
+                <li><code>list-group</code> - Structured list within card</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

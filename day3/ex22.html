@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11.2: Media Object Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-5">Media Object Layouts</h1>
+
+        <h2>1. Basic Media Object with Image Left</h2>
+        <div class="media mb-3">
+            <img src="https://via.placeholder.com/64x64?text=Avatar" class="me-3 rounded" alt="Avatar">
+            <div class="media-body">
+                <h5 class="mt-0">John Doe</h5>
+                <p>This is a basic media object with the image aligned to the left of the content. Perfect for comments, notifications, or posts.</p>
+            </div>
+        </div>
+
+        <div class="media mb-3">
+            <img src="https://via.placeholder.com/64x64?text=User2" class="me-3 rounded" alt="Avatar">
+            <div class="media-body">
+                <h5 class="mt-0">Jane Smith</h5>
+                <p>Media objects are flexible and can be used for various layouts including blog comments and social feeds.</p>
+            </div>
+        </div>
+
+        <h2 class="mt-5">2. Media Object with Image Right</h2>
+        <div class="d-flex mb-3">
+            <div class="flex-grow-1">
+                <h5 class="mt-0">Left Content</h5>
+                <p>The image is now aligned to the right side. This is useful for alternating layouts in a feed.</p>
+            </div>
+            <img src="https://via.placeholder.com/64x64?text=Image" class="ms-3 rounded" alt="Image">
+        </div>
+
+        <h2 class="mt-5">3. Nested Media Objects (Threaded Comments)</h2>
+        <div class="card p-3 mb-3">
+            <div class="d-flex mb-3">
+                <img src="https://via.placeholder.com/48x48?text=U1" class="me-3 rounded" alt="User 1">
+                <div class="flex-grow-1">
+                    <h6 class="mb-1">Alice Anderson</h6>
+                    <p class="mb-2">Great article! This really helped me understand the concepts.</p>
+                    <small class="text-muted">2 hours ago</small>
+
+                    <div class="d-flex mt-3 ps-3 border-start">
+                        <img src="https://via.placeholder.com/40x40?text=U2" class="me-2 rounded" alt="User 2">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">Bob Brown</h6>
+                            <p class="mb-2">Thanks for sharing! I completely agree with your points.</p>
+                            <small class="text-muted">1 hour ago</small>
+
+                            <div class="d-flex mt-3 ps-3 border-start">
+                                <img src="https://via.placeholder.com/40x40?text=U3" class="me-2 rounded" alt="User 3">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Charlie Chen</h6>
+                                    <p class="mb-2">Interesting discussion everyone!</p>
+                                    <small class="text-muted">30 minutes ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5">4. Social Feed Style</h2>
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex mb-3">
+                    <img src="https://via.placeholder.com/64x64?text=User" class="me-3 rounded-circle" alt="User">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">Sarah Davis</h6>
+                        <small class="text-muted">@sarahd • 3 hours ago</small>
+                    </div>
+                    <button class="btn btn-sm btn-outline-secondary">Follow</button>
+                </div>
+                <p class="mb-3">Just launched our new project! 🎉 Check it out and let us know what you think.</p>
+                <img src="https://via.placeholder.com/500x300?text=Project" class="img-fluid rounded mb-3" alt="Project">
+                <div class="d-flex gap-3">
+                    <span>👍 124 Likes</span>
+                    <span>💬 32 Comments</span>
+                    <span>↗️ 18 Shares</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5">5. Media Object with Badges and Status</h2>
+        <div class="d-flex mb-3 p-3 border rounded">
+            <div class="position-relative me-3">
+                <img src="https://via.placeholder.com/64x64?text=Dev" class="rounded-circle" alt="Developer">
+                <span class="badge bg-success position-absolute bottom-0 end-0">Online</span>
+            </div>
+            <div class="flex-grow-1">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <h6 class="mb-1">David Lee</h6>
+                        <p class="text-muted mb-2">React Developer</p>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-primary">Verified</span>
+                    </div>
+                </div>
+                <p class="mb-2">Passionate about building beautiful user interfaces with modern JavaScript frameworks.</p>
+                <div>
+                    <span class="badge bg-light text-dark me-2">JavaScript</span>
+                    <span class="badge bg-light text-dark me-2">React</span>
+                    <span class="badge bg-light text-dark">CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5">6. Notification Style Media Objects</h2>
+        <div class="alert alert-info d-flex mb-3" role="alert">
+            <img src="https://via.placeholder.com/40x40?text=Info" class="me-3 rounded" alt="Notification">
+            <div class="flex-grow-1">
+                <strong>New Feature!</strong> Check out our latest update featuring improved performance and new UI components.
+            </div>
+        </div>
+
+        <div class="alert alert-warning d-flex mb-3" role="alert">
+            <img src="https://via.placeholder.com/40x40?text=Warn" class="me-3 rounded" alt="Warning">
+            <div class="flex-grow-1">
+                <strong>Maintenance Notice:</strong> We'll be performing system maintenance on Sunday at 2 AM GMT.
+            </div>
+        </div>
+
+        <div class="alert alert-success mt-5">
+            <strong>Media Object Benefits:</strong>
+            <ul class="mb-0">
+                <li>Perfect for comments and threaded conversations</li>
+                <li>Works well with social feeds and notifications</li>
+                <li>Flexible alignment (left or right)</li>
+                <li>Easy to nest for replies</li>
+                <li>Can be combined with other Bootstrap components</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

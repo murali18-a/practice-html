@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.2: Reorder Columns</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Reordering Columns with Order Classes</h1>
+        <h2>1. Default Order (no reordering)</h2>
+        <div class="row g-3 mt-3 mb-5">
+            <div class="col-md-6">
+                <div class="bg-primary text-white p-4">
+                    <h5>First (col-md-6)</h5>
+                    <p>Appears first in HTML and on screen</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-secondary text-white p-4">
+                    <h5>Second (col-md-6)</h5>
+                    <p>Appears second in HTML and on screen</p>
+                </div>
+            </div>
+        </div>
+        <h2>2. Reordered on Medium Screens (order-md-*)</h2>
+        <p>First column is reordered to appear second on medium screens and up</p>
+        <div class="row g-3 mt-3 mb-5">
+            <div class="col-md-6 order-md-2">
+                <div class="bg-primary text-white p-4">
+                    <h5>First in HTML (order-md-2)</h5>
+                    <p>Appears SECOND on md and larger screens</p>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="bg-secondary text-white p-4">
+                    <h5>Second in HTML (order-md-1)</h5>
+                    <p>Appears FIRST on md and larger screens</p>
+                </div>
+            </div>
+        </div>
+        <h2>3. Three-Column Reordering</h2>
+        <div class="row g-3 mt-3 mb-5">
+            <div class="col-md-4 order-md-3">
+                <div class="bg-warning text-dark p-4">
+                    <h5>Column 1 (order-md-3)</h5>
+                    <p>Appears THIRD on medium screens</p>
+                </div>
+            </div>
+            <div class="col-md-4 order-md-1">
+                <div class="bg-success text-white p-4">
+                    <h5>Column 2 (order-md-1)</h5>
+                    <p>Appears FIRST on medium screens</p>
+                </div>
+            </div>
+            <div class="col-md-4 order-md-2">
+                <div class="bg-info text-white p-4">
+                    <h5>Column 3 (order-md-2)</h5>
+                    <p>Appears SECOND on medium screens</p>
+                </div>
+            </div>
+        </div>
+        <h2>4. Mobile vs Desktop Order</h2>
+        <p>Column appears first on mobile, last on desktop screens</p>
+        <div class="row g-3 mt-3">
+            <div class="col-12 col-md-8 order-md-2">
+                <div class="bg-primary text-white p-4">
+                    <h5>Main Content (order-md-2)</h5>
+                    <p>Appears first on mobile, second on desktop</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 order-md-1">
+                <div class="bg-danger text-white p-4">
+                    <h5>Sidebar (order-md-1)</h5>
+                    <p>Appears second on mobile, first on desktop</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7.2: Text Transform Utilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-5">Text Transform Utilities</h1>
+        <h2 class="mt-4">1. Uppercase (text-uppercase)</h2>
+        <p class="text-uppercase">this text will be displayed in uppercase</p>
+        <p class="text-uppercase">bootstrap typography utilities</p>
+        <h2 class="mt-4">2. Lowercase (text-lowercase)</h2>
+        <p class="text-lowercase">THIS TEXT WILL BE DISPLAYED IN LOWERCASE</p>
+        <p class="text-lowercase">BOOTSTRAP TYPOGRAPHY UTILITIES</p>
+        <h2 class="mt-4">3. Capitalize (text-capitalize)</h2>
+        <p class="text-capitalize">this text will have first letter of each word capitalized</p>
+        <p class="text-capitalize">bootstrap typography utilities</p>
+        <h2 class="mt-5">4. Styled Headings with Transform</h2>
+        <h3 class="text-uppercase">uppercase heading</h3>
+        <h3 class="text-lowercase">LOWERCASE HEADING</h3>
+        <h3 class="text-capitalize">capitalize heading</h3>
+
+        <h2 class="mt-5">5. Combined with Other Utilities</h2>
+        <p class="text-uppercase fw-bold text-primary">bold uppercase primary text</p>
+        <p class="text-lowercase text-muted fst-italic">italic lowercase muted text</p>
+        <p class="text-capitalize text-success fw-bold">bold capitalize success text</p>
+
+        <h2 class="mt-5">6. Buttons with Text Transform</h2>
+        <button class="btn btn-primary text-uppercase me-2">uppercase button</button>
+        <button class="btn btn-secondary text-lowercase">LOWERCASE button</button>
+        <button class="btn btn-success text-capitalize mt-2">capitalize me button</button>
+
+        <div class="card mt-5">
+            <div class="card-header bg-dark text-white">
+                <h5 class="text-uppercase mb-0">card title</h5>
+            </div>
+            <div class="card-body">
+                <h6 class="text-capitalize">subtitle in capitalize</h6>
+                <p>Regular paragraph text here</p>
+                <p class="text-uppercase text-muted">additional text in uppercase</p>
+            </div>
+        </div>
+
+        <h2 class="mt-5">7. Form Labels with Text Transform</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label text-uppercase">name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label text-capitalize">email address</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label text-lowercase">MESSAGE</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary text-uppercase">submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

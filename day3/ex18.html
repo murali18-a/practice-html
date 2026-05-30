@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9.2: Button Groups and Toggle Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-5">Button Groups and Toggle Buttons</h1>
+
+        <h2>1. Basic Button Group</h2>
+        <div class="btn-group mb-4" role="group">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+        </div>
+
+        <h2>2. Button Group with Solid Buttons</h2>
+        <div class="btn-group mb-4" role="group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Google</button>
+            <button type="button" class="btn btn-primary">Microsoft</button>
+        </div>
+
+        <h2>3. Large Button Group</h2>
+        <div class="btn-group btn-group-lg mb-4" role="group">
+            <button type="button" class="btn btn-secondary">Home</button>
+            <button type="button" class="btn btn-secondary">Services</button>
+            <button type="button" class="btn btn-secondary">Contact</button>
+        </div>
+
+        <h2>4. Small Button Group</h2>
+        <div class="btn-group btn-group-sm mb-4" role="group">
+            <button type="button" class="btn btn-success">✓</button>
+            <button type="button" class="btn btn-danger">✕</button>
+            <button type="button" class="btn btn-info">?</button>
+        </div>
+
+        <h2>5. Vertical Button Group</h2>
+        <div class="btn-group-vertical mb-4" role="group">
+            <button type="button" class="btn btn-warning">Option 1</button>
+            <button type="button" class="btn btn-warning">Option 2</button>
+            <button type="button" class="btn btn-warning">Option 3</button>
+            <button type="button" class="btn btn-warning">Option 4</button>
+        </div>
+
+        <h2>6. Checkbox Toggle Buttons</h2>
+        <div class="mb-4">
+            <input type="checkbox" class="btn-check" id="checkbox1" checked>
+            <label class="btn btn-primary" for="checkbox1">Checked</label>
+
+            <input type="checkbox" class="btn-check" id="checkbox2">
+            <label class="btn btn-primary" for="checkbox2">Unchecked</label>
+
+            <input type="checkbox" class="btn-check" id="checkbox3">
+            <label class="btn btn-primary" for="checkbox3">Unchecked</label>
+        </div>
+
+        <h2>7. Radio Toggle Buttons</h2>
+        <div class="mb-4">
+            <input type="radio" class="btn-check" name="radio-choice" id="radio1" checked>
+            <label class="btn btn-success" for="radio1">Option A</label>
+
+            <input type="radio" class="btn-check" name="radio-choice" id="radio2">
+            <label class="btn btn-success" for="radio2">Option B</label>
+
+            <input type="radio" class="btn-check" name="radio-choice" id="radio3">
+            <label class="btn btn-success" for="radio3">Option C</label>
+        </div>
+
+        <h2>8. Multiple Options Toggle</h2>
+        <div class="mb-4">
+            <input type="checkbox" class="btn-check" id="swift">
+            <label class="btn btn-outline-info" for="swift">Swift</label>
+
+            <input type="checkbox" class="btn-check" id="python">
+            <label class="btn btn-outline-info" for="python">Python</label>
+
+            <input type="checkbox" class="btn-check" id="java">
+            <label class="btn btn-outline-info" for="java">Java</label>
+
+            <input type="checkbox" class="btn-check" id="javascript">
+            <label class="btn btn-outline-info" for="javascript">JavaScript</label>
+        </div>
+
+        <h2>9. Complex Layout with Multiple Groups</h2>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h5>Difficulty Level</h5>
+                <div class="btn-group w-100" role="group">
+                    <input type="radio" class="btn-check" name="difficulty" id="easy" checked>
+                    <label class="btn btn-outline-warning" for="easy">Easy</label>
+
+                    <input type="radio" class="btn-check" name="difficulty" id="medium">
+                    <label class="btn btn-outline-warning" for="medium">Medium</label>
+
+                    <input type="radio" class="btn-check" name="difficulty" id="hard">
+                    <label class="btn btn-outline-warning" for="hard">Hard</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5>Category</h5>
+                <div class="btn-group w-100" role="group">
+                    <input type="radio" class="btn-check" name="category" id="coding" checked>
+                    <label class="btn btn-outline-secondary" for="coding">Coding</label>
+
+                    <input type="radio" class="btn-check" name="category" id="design">
+                    <label class="btn btn-outline-secondary" for="design">Design</label>
+
+                    <input type="radio" class="btn-check" name="category" id="other">
+                    <label class="btn btn-outline-secondary" for="other">Other</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info">
+            <strong>Note:</strong> Use checkboxes for multiple selections and radio buttons for single selection within a group.
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

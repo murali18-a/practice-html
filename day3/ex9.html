@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.1: Center Content with Flexbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-5">Centering Content with Flexbox</h1>
+        <h2>1. Horizontal Centering (justify-content-center)</h2>
+        <div class="row justify-content-center mt-4 mb-5" style="height: 200px; border: 2px dashed #007bff;">
+            <div class="col-md-4">
+                <div class="bg-primary text-white p-4 text-center">
+                    Centered Horizontally
+                </div>
+            </div>
+        </div>
+        <h2>2. Vertical Centering (align-items-center)</h2>
+        <div class="row align-items-center mt-4 mb-5" style="height: 200px; border: 2px dashed #28a745;">
+            <div class="col-md-12">
+                <div class="bg-success text-white p-4 text-center">
+                    Centered Vertically
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Centered Both Ways (justify-content-center + align-items-center)</h2>
+        <div class="row justify-content-center align-items-center mt-4 mb-5" style="height: 250px; border: 2px dashed #dc3545;">
+            <div class="col-md-4 text-center">
+                <div class="bg-danger text-white p-5">
+                    <h4>Perfectly Centered</h4>
+                    <p>Both horizontally and vertically</p>
+                </div>
+            </div>
+        </div>
+        <h2>4. Multiple Items Centered</h2>
+        <div class="row justify-content-center align-items-center mt-4 g-3" style="height: 200px; border: 2px dashed #ffc107;">
+            <div class="col-md-2 text-center">
+                <div class="bg-warning p-3">Box 1</div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="bg-warning p-3">Box 2</div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="bg-warning p-3">Box 3</div>
+            </div>
+        </div>
+        <h2 class="mt-5">5. Space Around (justify-content-around)</h2>
+        <div class="row justify-content-around mt-4 g-3" style="border: 2px dashed #17a2b8;">
+            <div class="col-md-2">
+                <div class="bg-info text-white p-3 text-center">Item 1</div>
+            </div>
+            <div class="col-md-2">
+                <div class="bg-info text-white p-3 text-center">Item 2</div>
+            </div>
+            <div class="col-md-2">
+                <div class="bg-info text-white p-3 text-center">Item 3</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
